@@ -1,0 +1,11 @@
+---
+# tasks file for common
+- name: Update MOTD
+  template:
+    src: motd.j2
+    dest: /etc/motd
+    owner: root
+    group: root
+    mode: "0600"
+    setype: etc_t
+
