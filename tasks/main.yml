@@ -12,6 +12,7 @@
 - name: Set SELinux to Permissive
   selinux:
     state: permissive
+    policy: targeted
 
 - name: Enable EPEL
   yum:
