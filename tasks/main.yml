@@ -9,3 +9,11 @@
     mode: "0600"
     setype: etc_t
 
+- name: Set SELinux to Permissive
+  selinux:
+    state: permissive
+
+- name: Enable EPEL
+  yum:
+    name: epel-release
+    state: present
